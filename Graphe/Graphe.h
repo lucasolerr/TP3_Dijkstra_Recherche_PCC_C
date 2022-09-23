@@ -26,6 +26,7 @@ struct Sommet
     char couleur;
     //valeur depuis le sommet i du pcc
     int pcc;
+    int predecesseur;
 
 };
 
