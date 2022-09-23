@@ -20,8 +20,11 @@ typedef struct Arc* pArc;
 struct Sommet
 {
     struct Arc* arc;
+    //numéro du sommet
     int valeur;
+    //si le sommet est marqué = 1 sinon 0
     char couleur;
+    //valeur depuis le sommet i du pcc
     int pcc;
 
 };
