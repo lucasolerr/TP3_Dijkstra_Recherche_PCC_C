@@ -3,4 +3,15 @@
 
 #include "../Graphe/Graphe.h"
 
+
+void dijkstra(pSommet* graphe, int ordre, int sommetInital, int sommetFinal);
+
+int sommetsMarques(pSommet* graphe, int ordre);
+
+int rechercheMinimum(pSommet* graphe, int ordre);
+
+void actualiserPcc(pSommet* graphe, int sommetRecherche, int sommetSuccesseur);
+
+void affichagePcc(pSommet* graphe, int ordre, int sommetInitial, int sommetFinal);
+
 #endif

@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include "Graphe/Graphe.h"
+#include "Dijkstra/dijkstra.h"
 
 
 
@@ -11,13 +12,14 @@ int main() {
     printf("Sommet initial pour commencer le calcul du PCC :\n");
     scanf(" %d", &sommetInitial);
 
-    //saisie du numéro du sommet final pour lancer un parcours
+    //saisie du numéro du sommet final pour rechercher le pcc du parcours
     printf("Sommet final pour calculer le PCC :\n");
     scanf(" %d", &sommetFinal);
 
     //afficher le graphe
     graphe_afficher(g);
 
+    dijkstra(g->pSommet, g->ordre, sommetInitial, sommetFinal);
 
 
     return 0;

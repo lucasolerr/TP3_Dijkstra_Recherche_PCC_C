@@ -25,7 +25,7 @@ struct Sommet
     //si le sommet est marqué = 1 sinon 0
     char couleur;
     //valeur depuis le sommet i du pcc
-    int pcc;
+    int pccTotal;
     int predecesseur;
 
 };
